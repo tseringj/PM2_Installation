@@ -23,7 +23,7 @@
    <link rel="stylesheet" href="/assets/css/css/tabler.min.css"><br>
 
    
-10. pm2 start a.sh 
+10. pm2 start a.sh <br>
    pm2 save<br>
    pm2 startup<br>
    sudo env PATH=$PATH:/usr/bin /usr/local/lib/node_modules/pm2/bin/pm2 startup systemd -u nvidia --hp /home/nvidia
