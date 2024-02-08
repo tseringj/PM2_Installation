@@ -13,36 +13,36 @@
 7. npm start
 8. Inside pm2-webui folder:<br>
 
-  js files put in assets/js<br>
-  and css in assets/css<br>
+   js files put in assets/js<br>
+   and css in assets/css<br>
    
-  in the base.html replace these 3 lines<br>
-  <script src="/assets/js/jquery-3.6.0.min.js" ></script><br>
-  <script src="/assets/js/tabler.min.js"></script><br>
-  <link rel="stylesheet" href="/assets/css/css/tabler.min.css"><br>
+   in the base.html replace these 3 lines<br>
+   <script src="/assets/js/jquery-3.6.0.min.js" ></script><br>
+   <script src="/assets/js/tabler.min.js"></script><br>
+   <link rel="stylesheet" href="/assets/css/css/tabler.min.css"><br>
 
-  In .env<br>
-  Change to HOST=0.0.0.0<br>
+   In .env<br>
+   Change to HOST=0.0.0.0<br>
    
 10. pm2 start a.sh or /home/nvidia/amq/bin/ionis/bin/ionis_artemis.sh --no-autorestart<br>
    pm2 save<br>
    pm2 startup<br>
    sudo env PATH=$PATH:/usr/bin /usr/local/lib/node_modules/pm2/bin/pm2 startup systemd -u nvidia --hp /home/nvidia
-11. pm2 start q.sh
+11. pm2 start q.sh<br>
     pm2 save
-12. pm2 start webui_start.sh
+12. pm2 start webui_start.sh<br>
     pm2 save
-13. pm2 start thermal_cam_initialization.sh -no-autorestart
-    pm2 stop thermal_cam_initialization.sh
+13. pm2 start thermal_cam_initialization.sh -no-autorestart<br>
+    pm2 stop thermal_cam_initialization.sh<br>
     pm2 save
-14. pm2 start startup_script --restart-delay 5000 -no-autorestart
+14. pm2 start startup_script --restart-delay 5000 -no-autorestart<br>
     pm2 save
 
-15. pm2 start cli.sh
-    pm2 stop cli.sh
+15. pm2 start cli.sh<br>
+    pm2 stop cli.sh<br>
     pm2 save
-16. pm2 start i.sh
-    pm2 stop i.sh
+16. pm2 start i.sh<br>
+    pm2 stop i.sh<br>
     pm2 save
  
  
