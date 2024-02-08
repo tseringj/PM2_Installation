@@ -23,7 +23,7 @@
    <link rel="stylesheet" href="/assets/css/css/tabler.min.css"><br>
 
    
-10. pm2 start a.sh or /home/nvidia/amq/bin/ionis/bin/ionis_artemis.sh --no-autorestart<br>
+10. pm2 start a.sh 
    pm2 save<br>
    pm2 startup<br>
    sudo env PATH=$PATH:/usr/bin /usr/local/lib/node_modules/pm2/bin/pm2 startup systemd -u nvidia --hp /home/nvidia
