@@ -13,16 +13,15 @@
 7. npm start
 8. Inside pm2-webui folder:<br>
 
-   js files put in assets/js<br>
+   
+   Put js files in assets/js<br>
    and css in assets/css<br>
    
-   in the base.html replace these 3 lines<br>
+   in the views/base.html replace these 3 lines on line no: 6,7,8 <br>
    <script src="/assets/js/jquery-3.6.0.min.js" ></script><br>
    <script src="/assets/js/tabler.min.js"></script><br>
    <link rel="stylesheet" href="/assets/css/css/tabler.min.css"><br>
 
-   In .env<br>
-   Change to HOST=0.0.0.0<br>
    
 10. pm2 start a.sh or /home/nvidia/amq/bin/ionis/bin/ionis_artemis.sh --no-autorestart<br>
    pm2 save<br>
