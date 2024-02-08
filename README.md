@@ -11,7 +11,7 @@
    User: nvidia<br>
    password: Ionis@3fl
 7. npm start
-8.Inside pm2-webui folder:<br>
+8. Inside pm2-webui folder:<br>
 
   js files put in assets/js<br>
   and css in assets/css<br>
