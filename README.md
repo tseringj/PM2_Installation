@@ -1,6 +1,6 @@
 # PM2_Installation steps: 
 1. Install npm and pm2
-   sudo apt install npm
+sudo apt install npm
    sudo npm install pm2 -g
 2. cd ionis
 3. git clone and run the commands
